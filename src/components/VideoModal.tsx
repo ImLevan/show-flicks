@@ -6,9 +6,9 @@ type VideoModalProps = {
 const VideoModal: React.FC<VideoModalProps> = ({ url_id, onRequestClose }) => {
 
     return (
-        <div id="video-modal" className="fixed top-0 left-0 w-full h-full flex justify-center items-center z-40">
+        <div id="video-modal" className="fixed top-0 left-0 w-full h-full mt-8 flex justify-center items-center z-40">
             <div className="fixed top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
-            <div className="relative z-20 bg-black p-4 rounded">
+            <div className="relative z-20 bg-black p-4 rounded w-2/3 h-2/3" >
                 <button onClick={onRequestClose} className="absolute top-2 right-2 text-white">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -37,8 +37,7 @@ const VideoModal: React.FC<VideoModalProps> = ({ url_id, onRequestClose }) => {
                 </button>
                 <iframe
                     title="video"
-                    width="1024"
-                    height="600"
+                    className="w-full h-full"
                     src={`https://www.youtube.com/embed/${url_id}`}
                     frameBorder="0"
                     allowFullScreen

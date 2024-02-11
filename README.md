@@ -1,36 +1,54 @@
-# React + TypeScript + Vite
+# 🎥🎬 Show Flicks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<a href="https://show-flicks.netlify.app/">
+<img src="src/assets/home.png">
+</a>
 
-Currently, two official plugins are available:
+> © Desarrollado por Valentin Chianese
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Show Flicks es una aplicación web que te permite consultar la información y trailers de miles de películas y series.
 
-## Expanding the ESLint configuration
+## Stack
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- API de TMDB
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Funcionalidades
 
-- Configure the top-level `parserOptions` property like this:
+Las características principales del proyecto son:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- **Información:** Consulta la sinopsis, fecha de estreno, género, calificación y más de películas y series.
 
-# TECHS
-[] Infinite Scroll
-[] API tmdb
-[] Components
-[] useParams / searchParams 
+- **Filtros:** Encuentra contenido por "estrenos", "mejor rankeada", "género" y más.
+
+- **Buscador:** Encuentra rápidamente el contenido que te interesa.
+
+
+## Aspectos destacados
+
+- Implementación de Infinite Scroll para una experiencia de usuario fluida.
+
+- Optimización del consumo de la API de TMDB.
+
+- Uso de componentes reutilizables en React.
+
+- Ruteo con React
+
+- Implementación de useParamas y searchParams para la gestión de filtros y búsquedas.
+
+
+## Captura de pantalla
+
+![Screenshot DER](./src/assets/ss.png)
+
+## Sitio web
+En este link se encuentra desplegada la aplicación web, puedes probarla sin problemas.
+<a href="https://show-flicks.netlify.app/">Show Flicks - App web</a>
+
+## Créditos
+
+Desarrollado por [Valentin Chianese](https://github.com/ImLevan).
