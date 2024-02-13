@@ -14,7 +14,7 @@ const SearchBar = () => {
     }
 
     return (
-        <form onSubmit={handleQuerySubmit}  className="flex bg-gray-950 px-4 py-2 focus-within:bg-gray-800 rounded-3xl">
+        <form onSubmit={handleQuerySubmit}  className="min-w-[90px] w-1/4 md:w-1/6 flex bg-gray-950 px-4 py-2 focus-within:bg-gray-800 rounded-3xl">
             <button>
                 <svg 
                     xmlns="http://www.w3.org/2000/svg" 
@@ -43,10 +43,10 @@ const SearchBar = () => {
             </button>
             <input
                 type="text"
-                placeholder="Search something..."
+                placeholder="Search..."
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
-                className="bg-gray-950 text-white rounded mr-4 focus:outline-none focus:bg-gray-800"
+                className="w-full bg-gray-950 text-white rounded mr-4 focus:outline-none focus:bg-gray-800"
             />
         </form>
     )
