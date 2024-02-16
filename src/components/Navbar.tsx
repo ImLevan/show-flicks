@@ -107,7 +107,7 @@ const Navbar = () => {
                     </button>
                 </div>
                 {isOpen && (
-                    <div className="md:hidden  items-center bg-black rounded-lg mt-2 p-2">
+                    <div className="md:hidden  items-center rounded-lg mt-2 p-8">
                         <div className="items-center ">
                             <MenuItem
                                 setShowMenu={setShowMovieMenu}

@@ -165,7 +165,7 @@ const ExploreMovies: React.FC = () => {
                 </header>
                 <main className="px-5 md:px-8 lg:px-12 2xl:px-16 min-h-screen bg-[#0a0a0a] pb-20">
                     <header className="text-center py-10">
-                        <h3 className="uppercase text-lg text-gray-400">All movies currently available</h3>
+                        <h3 className="uppercase text-lg text-gray-400">All {audiovisual === 'movies' ? audiovisual : audiovisual + ' shows'} currently available</h3>
                     </header>
                     <section className="flex flex-col gap-10 md:grid md:gap-x-2 md:gap-y-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-y-9 lg:gap-x-4 xl:grid-cols-4">
                         {media.map((media: TvAndMovieResult, id: number) => (
