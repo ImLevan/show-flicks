@@ -38,7 +38,7 @@ Las características principales del proyecto son:
 
 - Ruteo con React
 
-- Implementación de useParamas y searchParams para la gestión de filtros y búsquedas.
+- Implementación de useParams y searchParams para la gestión de filtros y búsquedas.
 
 
 ## Captura de pantalla
