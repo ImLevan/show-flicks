@@ -25,7 +25,7 @@ const AudiovisualGrid: React.FC<Props> = ({ audiovisual, isMovie }) => {
     const type = isMovie ? "movie" : "tv";
 
     return (
-        <Link to={`/${type}/${id}`}>
+        <Link to={`/${type}/${id}`} className="hover:scale-110 transition">
             <div className="w-[100%] sm:w-[100%] md:w-[100%] lg:w-[100%] inline-block cursor-pointer relative p-2">
                 <img className="w-full rounded-lg h-auto block" src={`https://image.tmdb.org/t/p/w500/${backdrop_path}`} alt={title || name} />
                 <div className="absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100 text-white">
